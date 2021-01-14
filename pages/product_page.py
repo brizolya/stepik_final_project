@@ -16,3 +16,6 @@ class ProductPage(BasePage):
         price_message = self.browser.find_element(*ProductPageLocators.PRICE_IN_MESS).text
         price_item = self.browser.find_element(*ProductPageLocators.PRICE_IN_ITEM).text
         assert price_message == price_item, "The price of the item matches the price in the message"
+
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.MESS_SUCCESS), "Success message is presented, but should not be"
