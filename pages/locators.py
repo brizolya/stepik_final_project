@@ -13,3 +13,7 @@ class ProductPageLocators():
     TITLE_OF_BOOK = (By.CSS_SELECTOR, ".product_main > h1")
     PRICE_IN_MESS = (By.CSS_SELECTOR, ".alertinner > p > strong")
     PRICE_IN_ITEM = (By.CSS_SELECTOR, ".product_main > .price_color")
+
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
